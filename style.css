@@ -52,6 +52,10 @@ section {
     background-color: #9792E4;
 }
 
+.bg-white {
+    background-color: white;
+}
+
 .text-blue {
     color: #0084FD;
 }
@@ -73,6 +77,11 @@ section {
 .card {
     height: 100%;
     padding: 20px;
+    border-radius: 20px;
+}
+
+.card-50 {
+    padding: 20px 20px;
     border-radius: 20px;
 }
 
@@ -102,12 +111,18 @@ body {
     color: white;
 }
 
+.btn-circle {
+    background-color: #9792E4;
+    border-radius: 100%;
+    padding: 8px;
+}
+
 .btn-large {
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.btn i {
+.btn-primary i {
     margin-right: 10px;
 }
 
@@ -195,6 +210,15 @@ header .container {
     align-items: flex-end;
 }
 
+.card-50 {
+    width: 60%;
+    text-align: center;
+}
+
+.card-50 p {
+    font-style: italic;
+}
+
 /* ----------------
     RESPONSIVE
 -----------------*/
@@ -202,6 +226,7 @@ header .container {
 @media screen and (max-width: 992px) {
     .btn-menu-mobile {
         display: block;
+        background: transparent;
     }
 
     nav {
@@ -212,9 +237,18 @@ header .container {
         display: block;
     }
 
+    #planning .row {
+        display: block;
+    }
+
     #planning .col {
         width: 100%;
-    } 
+    }
+
+    #planning .card-50 {
+        width: 100%;
+        margin-top: 100px;
+    }
 }
 
 @media screen and (max-width: 768px) {
