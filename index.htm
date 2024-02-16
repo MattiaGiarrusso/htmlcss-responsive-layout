@@ -16,98 +16,78 @@
 </head>
 <body>
 
-    <header>
+    <header class="bg-blue">
         <div class="container">
-            <div class="header-left">
-                <img src="./img/logo.png" alt="LOGO">
+            <div class="logo">
+                <img src="./img/logo.png" alt="logo">
             </div>
-            <div class="header-right">
-                <nav class="nav-desktop">
-                    <ul>
-                        <li><a href="">Plannig</a></li>
-                        <li><a href="">Testimonials</a></li>
-                        <li><a href="">Features</a></li>
-                        <li><a href="">About us</a></li>
-                        <li><button class="btn">Get Started</button></li>
-                    </ul>
-                </nav>  
-                <nav></nav>              
-            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Plannig</a></li>
+                    <li><a href="">Testimonials</a></li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><button class="btn">Get Started</button></li>
+                </ul>
+            </nav>
+            <button class="btn btn-menu-mobile">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
     </header>
 
     <main>
-        <!-- section intro -->
-        <section class="intro">
+        <section id="intro">
+
             <div class="container">
-                
-                <!-- first row -->
                 <div class="row">
-                    <div class="col grow">
-                        <div class="card card-grow">
-                            <div class="card-text">
-                                <h3>Get a demo application</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dicta excepturi architecto exercitationem incidunt, consequuntur nam ad?</p>
-                                <div class="card-btn">
-                                    <button class="btn btn-intro"><i class="fa-brands fa-apple"></i> App Store</button>
-                                </div>
+                    <div class="col col-big">
+                        <div class="card bg-lightblue">
+                            <div class="card-left flow-16">
+                                <h3 class="text-blue">Get a demo application</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima dolor a repudiandae quas perferendis blanditiis adipisci cumque, ea rem nam labore itaque culpa unde neque ducimus! Et repellendus sunt similique.</p>
+                                <button class="btn btn-primary btn-large btn-apple-store"><i class="fa-brands fa-apple"></i>App Store</button>
                             </div>
-                            <div class="card-img">
+                            <div class="card-right">
                                 <img src="./img/phone.png" alt="phone">
-                            </div>                            
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-text">
-                                <i class="fa-solid fa-file-code"></i>
-                                <h3>Clean Code</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dicta excepturi architecto exercitationem incidunt, consequuntur nam ad?</p>
                             </div>
                         </div>
                     </div>
+                    <div class="col">
+                        <div class="card flow-16 bg-lightblue text-center">
+                            <i class="text-blue fa-solid fa-file-code"></i>
+                            <h3 class="text-blue">Clean Code</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita minus quasi nobis! Voluptas commodi quam corporis id iure, tempora laboriosam odio, maxime illo iste architecto dignissimos possimus enim eius? Similique?</p>
+                        </div>
+                    </div>
                 </div>
-                <!-- first row -->
 
-                <!-- second row -->
                 <div class="row">
                     <div class="col">
-                        <div class="card">
-                            <div class="card-text">
-                                <i class="fa-solid fa-compass-drafting"></i>
-                                <h3>Web Design</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dicta excepturi architecto exercitationem incidunt, consequuntur nam ad?</p>
-                            </div>
+                        <div class="card flow-16 bg-lightblue text-center">
+                            <i class="text-blue fa-solid fa-compass-drafting"></i>
+                            <h3 class="text-blue">Web Design</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita minus quasi nobis! Voluptas commodi quam corporis id iure, tempora laboriosam odio, maxime illo iste architecto dignissimos possimus enim eius? Similique?</p>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card">
-                            <div class="card-text">
-                                <i class="fa-solid fa-laptop-code"></i>
-                                <h3>Development</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dicta excepturi architecto exercitationem incidunt, consequuntur nam ad?</p>
-                            </div>
+                        <div class="card flow-16 bg-lightblue text-center">
+                            <i class="text-blue fa-solid fa-laptop-code"></i>
+                            <h3 class="text-blue">Development</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita minus quasi nobis! Voluptas commodi quam corporis id iure, tempora laboriosam odio, maxime illo iste architecto dignissimos possimus enim eius? Similique?</p>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card">
-                            <div class="card-text">
-                                <i class="fa-solid fa-bullhorn"></i>
-                                <h3>Branding</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dicta excepturi architecto exercitationem incidunt, consequuntur nam ad?</p>
-                            </div>
+                        <div class="card flow-16 bg-lightblue text-center">
+                            <i class="text-blue fa-solid fa-bullhorn"></i>
+                            <h3 class="text-blue">Branding</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita minus quasi nobis! Voluptas commodi quam corporis id iure, tempora laboriosam odio, maxime illo iste architecto dignissimos possimus enim eius? Similique?</p>
                         </div>
-                    </div>
+                    </div>    
                 </div>
-                <!-- /second row -->
-
-            </div>   
+            </div>
         </section>
     </main>
 
-    <footer>
-
-    </footer>
-    
 </body>
 </html>
