@@ -1,0 +1,174 @@
+/*---------------
+    RESET
+---------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+/* ----------------
+    GENERAL
+-----------------*/
+.container{
+    max-width: 1170px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.col{
+    padding: 0 10px;
+}
+
+
+/* ----------------
+    /GENERAL
+-----------------*/
+
+/* ----------------
+    TYPOGRAPHY
+-----------------*/
+body {
+    font-family: "PT Sans", sans-serif;
+}
+
+h3 {
+    color: #0084FD;
+    font-weight: 900;
+}
+/* ----------------
+    /TYPOGRAPHY
+-----------------*/
+
+/* ----------------
+UTILITIES
+-----------------*/
+.grow{
+    flex-grow: 1;
+}
+/* ----------------
+    UTILITIES
+-----------------*/
+
+/* ----------------
+    BUTTONS
+-----------------*/
+.btn {
+    border: none;
+    padding: 6px 8px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-intro {
+    background-color: #0084FD;
+    color: white;
+    font-weight: bold;
+    padding: 10px 40px
+}
+
+/* ----------------
+    /BUTTONS
+-----------------*/
+
+/* ----------------
+    HEADER
+-----------------*/
+header {
+    background-color: #0084FD;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.nav-desktop ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-desktop a {
+    text-decoration: none;
+    color: white;
+}
+/* ----------------
+    /HEADER
+-----------------*/
+
+/* ----------------
+    MAIN
+-----------------*/
+.intro {
+    padding-top: 40px;
+    color: #5A6E7F;
+}
+
+.intro .col{
+    width: calc(100% / 3);
+    margin-bottom: 20px;
+}
+
+.intro .card {
+    background-color: #B5DDFF;
+    padding: 20px 15px;
+    border-radius: 20px;
+}
+
+.card-grow {
+    display: flex;
+}
+
+.intro i:not(.fa-apple) {
+    color: #0084FD;
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.intro .col:not(.grow) {
+    text-align: center;
+}
+
+.card-grow .card-text {
+    padding-right: 80px;
+}
+
+.card-text p {
+    line-height: 30px;
+}
+
+.card-text {
+    padding: 14px 0
+}
+
+.card-text h3, p {
+padding-top: 20px;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+.card-btn {
+    padding-top: 30px;
+    padding-left: 5px;
+}
+/* ----------------
+    /MAIN
+-----------------*/
+
+
+
