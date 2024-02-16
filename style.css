@@ -48,6 +48,10 @@ section {
     background-color: #B5DDFF;
 }
 
+.bg-purple {
+    background-color: #9792E4;
+}
+
 .text-blue {
     color: #0084FD;
 }
@@ -150,6 +154,8 @@ header .container {
     MAIN
 -----------------*/
 
+/* -------INTRO---------*/
+
 #intro .col{
     width: calc(100% / 3);
     margin-bottom: 20px;
@@ -177,6 +183,16 @@ header .container {
     font-size: 14px;
     color: #5a6e7f;
     font-weight: 700;
+}
+
+/* -------PLANNING---------*/
+
+#planning .col {
+    width: 50%;
+}
+
+#planning .row {
+    align-items: flex-end;
 }
 
 /* ----------------
