@@ -64,6 +64,14 @@ section {
     color: #B5DDFF;
 }
 
+.text-white {
+    color: white;
+}
+
+.text-purple {
+    color: #9792E4;;
+}
+
 .text-center {
     text-align: center;
 }
@@ -202,6 +210,10 @@ header .container {
 
 /* -------PLANNING---------*/
 
+#planning .container {
+    padding-top: 40px;
+}
+
 #planning .col {
     width: 50%;
 }
@@ -218,6 +230,16 @@ header .container {
 .card-50 p {
     font-style: italic;
 }
+
+/* -------TESTIMONIALS---------*/
+
+#testimonials .row > * {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
 
 /* ----------------
     RESPONSIVE
