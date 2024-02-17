@@ -300,15 +300,12 @@ header .container {
 }
 
 #benefits .col {
+    width: calc(100% / 3);
     padding: 15px 15px;
 }
 
 #benefits .card h1 {
     font-size: 50px;    
-}
-
-#benefits .row {
-    flex-wrap: nowrap;
 }
 
 #benefits button {
@@ -348,11 +345,6 @@ header .container {
         margin-top: 100px;
     }
 
-    #benefits .row {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
     #benefits .col {
         width: 50%;
     }
@@ -386,4 +378,7 @@ header .container {
         text-align: center;
     }
 
+    #benefits .col {
+        width: 100%;
+    }
 }
