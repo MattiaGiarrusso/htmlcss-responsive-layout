@@ -101,6 +101,10 @@ section {
     margin-top: 20px;
 }
 
+.flow-30 > *:not(:first-child) {
+    margin-top: 30px;
+}
+
 .img-circle {
     border-radius: 50%;
 }
@@ -164,7 +168,7 @@ body {
 .btn-circle {
     background-color: #9792E4;
     border-radius: 100%;
-    padding: 8px;
+    padding: 16px;
 }
 
 .btn-large {
@@ -217,7 +221,6 @@ header .container {
 /* ----------------
     MAIN
 -----------------*/
-
 /* -------INTRO---------*/
 
 #intro .col{
@@ -255,12 +258,16 @@ header .container {
     padding-top: 40px;
 }
 
+#planning .row {
+    align-items: flex-end;
+}
+
 #planning .col {
     width: 50%;
 }
 
-#planning .row {
-    align-items: flex-end;
+#planning .col-right {
+    padding-left: 42px;
 }
 
 .card-50 {
@@ -389,6 +396,17 @@ header .container {
     font-size: 35px;
 }
 
+/* ----------------
+    FOOTER
+-----------------*/
+footer .row {
+    margin: 0 auto;
+    max-width: 50%;
+    padding: 40px 90px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 
 /* ----------------
     RESPONSIVE
@@ -414,6 +432,7 @@ header .container {
 
     #planning .col {
         width: 100%;
+        padding: 10px 40px;
     }
 
     #planning .card-50 {
@@ -423,6 +442,11 @@ header .container {
 
     #benefits .col {
         width: 50%;
+    }
+
+    footer .row {
+        max-width: none;
+        display: block;
     }
 }
 
