@@ -151,7 +151,7 @@ body {
 
 .btn-header:hover {
     color: white;
-    background-color: #0084FD;
+    background-color: #9792E4;
     transition: 0.4s;
 }
 
@@ -243,6 +243,11 @@ header .container {
 .main-nav a {
     text-decoration: none;
     color: white;
+}
+
+.main-nav a:hover {
+    color: #9792E4;
+    transition: 0.4s;
 }
 
 .btn-menu-mobile {
