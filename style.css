@@ -149,14 +149,34 @@ body {
     cursor: pointer;
 }
 
+.btn-header:hover {
+    border: 1px solid white;
+    color: white;
+    background-color: #0084FD;
+    transition: 0.4s;
+}
+
 .btn-primary {
     background-color: #0084FD;
     color: white;
 }
 
+.btn-primary:hover {
+    transition: 0.4s;
+    background-color: white;
+    color: #0084FD;
+}
+
 .btn-secondary {
     background-color: #9792E4;
     color: white;
+}
+
+.btn-secondary:hover {
+    transition: 0.4s;
+    background-color: white;
+    color: #9792E4;
+    border: 1px solid #9792E4;
 }
 
 .btn-tertiary {
@@ -165,10 +185,22 @@ body {
     color: #9792E4;
 }
 
+.btn-tertiary:hover {
+    transition: 0.4s;
+    background-color: #FDC15F;
+    color: white;
+}
+
 .btn-circle {
     background-color: #9792E4;
     border-radius: 100%;
     padding: 16px;
+}
+
+.btn-circle:hover {
+    transition: 0.4s;
+    background-color: #333333;
+    color: #9792E4;
 }
 
 .btn-large {
@@ -416,6 +448,11 @@ footer .row {
     .btn-menu-mobile {
         display: block;
         background: transparent;
+    }
+
+    .btn-menu-mobile:hover {
+        color: #9792E4;
+        transition: 0.4s;
     }
 
     nav {
