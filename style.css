@@ -16,6 +16,20 @@ img {
     max-width: 100%;
 }
 
+@keyframes vibrate {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(-1deg); }
+    20% { transform: rotate(1deg); }
+    30% { transform: rotate(0deg); }
+    40% { transform: rotate(1deg); }
+    50% { transform: rotate(-1deg); }
+    60% { transform: rotate(0deg); }
+    70% { transform: rotate(-1deg); }
+    80% { transform: rotate(1deg); }
+    90% { transform: rotate(0deg); }
+    100% { transform: rotate(-1deg); }
+  }
+
 /* ----------------
     GENERAL
 -----------------*/
@@ -193,14 +207,17 @@ body {
 
 .btn-circle {
     background-color: #9792E4;
-    border-radius: 100%;
-    padding: 16px;
+    border-radius: 50%;
+    padding: 20px;
+    cursor: pointer;
 }
 
 .btn-circle:hover {
     transition: 0.4s;
     background-color: #333333;
     color: #9792E4;
+    transition: 0.2s;
+    transform: rotate(180deg);
 }
 
 .btn-large {
@@ -234,6 +251,11 @@ header .container {
     align-items: center;
 }
 
+header img:hover {
+    animation: vibrate 0.5s;
+    animation-iteration-count: 0.5s;
+}
+
 .main-nav ul {
     display: flex;
     gap: 20px;
@@ -250,11 +272,58 @@ header .container {
     transition: 0.4s;
 }
 
+.menù-tablet {
+    display: none;
+    position: relative;
+}
+
 .btn-menu-mobile {
     display: none;
     color: white;
     font-size: 20px;
 }
+
+.overlay {
+    display: none;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    background-color: #0084FD;
+    overflow: hidden;
+    width: 300px;
+    height: 250px;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+}
+
+.container:hover .overlay {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+.overlay ul {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 10px;
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.overlay a {
+    text-decoration: none;
+    color: white;
+}
+
 
 /* ----------------
     MAIN
@@ -451,14 +520,22 @@ footer .row {
 -----------------*/
 
 @media screen and (max-width: 992px) {
+    .menù-tablet {
+        display: block;
+    }
+
     .btn-menu-mobile {
         display: block;
         background: transparent;
     }
 
     .btn-menu-mobile:hover {
-        color: #9792E4;
-        transition: 0.4s;
+        transition: 0.2s;
+        transform: rotate(90deg);
+    }
+
+    .overlay {
+        display: block;
     }
 
     nav {
