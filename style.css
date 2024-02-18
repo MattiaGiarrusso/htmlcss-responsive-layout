@@ -43,6 +43,10 @@ section {
 /*-------------------
     UTILITY
 --------------------*/
+.bg-black {
+    background-color: #333333;
+}
+
 .bg-blue {
     background-color: #0084FD;
 }
@@ -146,12 +150,6 @@ body {
     color: white;
 }
 
-.btn-circle {
-    background-color: #9792E4;
-    border-radius: 100%;
-    padding: 8px;
-}
-
 .btn-secondary {
     background-color: #9792E4;
     color: white;
@@ -163,6 +161,12 @@ body {
     color: #9792E4;
 }
 
+.btn-circle {
+    background-color: #9792E4;
+    border-radius: 100%;
+    padding: 8px;
+}
+
 .btn-large {
     padding-left: 20px;
     padding-right: 20px;
@@ -171,7 +175,6 @@ body {
 .btn-primary i {
     margin-right: 10px;
 }
-
 
 .btn-apple-store {
     font-weight: 700;
