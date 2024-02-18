@@ -150,13 +150,13 @@ body {
 }
 
 .btn-header:hover {
-    border: 1px solid white;
     color: white;
     background-color: #0084FD;
     transition: 0.4s;
 }
 
 .btn-primary {
+    border: 1px solid #0084FD;
     background-color: #0084FD;
     color: white;
 }
@@ -168,6 +168,7 @@ body {
 }
 
 .btn-secondary {
+    border: 1px solid #9792E4;
     background-color: #9792E4;
     color: white;
 }
@@ -176,7 +177,6 @@ body {
     transition: 0.4s;
     background-color: white;
     color: #9792E4;
-    border: 1px solid #9792E4;
 }
 
 .btn-tertiary {
@@ -225,6 +225,7 @@ header {
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 1000;
 }
 
 header .container {
@@ -459,6 +460,14 @@ footer .row {
         display: none;
     }
 
+    body .row {
+        padding: 10px 20px;
+    }
+
+    body .container {
+        padding: 0px 20px;
+    }
+
     #intro .col-big .card {
         display: block;
     }
@@ -469,7 +478,10 @@ footer .row {
 
     #planning .col {
         width: 100%;
-        padding: 10px 40px;
+    }
+
+    #planning .col-right {
+        padding-left: 0px; 
     }
 
     #planning .card-50 {
@@ -480,6 +492,10 @@ footer .row {
     #benefits .col {
         width: 50%;
     }
+
+    #about-us .col-right {
+        padding: 0 50px;
+    }    
 
     footer .row {
         max-width: none;
