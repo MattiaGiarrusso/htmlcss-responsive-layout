@@ -16,6 +16,10 @@ img {
     max-width: 100%;
 }
 
+/*---------------
+ KEYFRAME EFFECT
+---------------*/
+
 @keyframes vibrate {
     0% { transform: rotate(0deg); }
     10% { transform: rotate(-1deg); }
