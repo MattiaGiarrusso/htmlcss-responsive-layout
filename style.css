@@ -323,6 +323,10 @@ header img:hover {
     transform: translate(-50%, -50%);
 }
 
+.overlay li {
+        border-bottom: 1px solid #0171d9;
+}
+
 .overlay a {
     text-decoration: none;
     color: white;
