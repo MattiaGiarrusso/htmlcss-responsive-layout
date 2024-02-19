@@ -323,7 +323,7 @@ header img:hover {
     transform: translate(-50%, -50%);
 }
 
-.overlay li {
+.overlay li:not(:last-child) {
         border-bottom: 1px solid #0171d9;
 }
 
